@@ -1,0 +1,27 @@
+GET http://localhost:5000/users 
+
+###
+GET http://localhost:5000/users/633134c3888387974a04e509
+
+###
+POST http://localhost:5000/users 
+Content-Type: application/json
+
+{
+  "nama" : "Mia",
+  "email" : "mia@gmail.com",
+  "gender" : "Female"
+}
+
+###
+PATCH  http://localhost:5000/users/633134c3888387974a04e509
+Content-Type: application/json
+
+{
+  "nama" : "Bedjo",
+  "email" : "Bedjo@gmail.com",
+  "gender" : "Male"
+}
+
+###
+DELETE http://localhost:5000/users/633134c3888387974a04e509
